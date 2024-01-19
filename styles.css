@@ -287,12 +287,15 @@ header, footer {
     .vertical-bar {
         width: 60%; /* Adjust the width of the bar */
         height: 6px; /* Adjust the height of the bar */
-        margin-top: 15%;
-        margin: auto; /* Centers the bar and adds space below it */
+        margin-top: 25%;
+    
+        margin-left: auto;
+        margin-right: auto;/* Centers the bar and adds space below it */
     }
     
     .projects{
         overflow-y: None;
+        overflow-x: None;
     }
     .project {
         margin-bottom: 20px; /* Adds space below each card */
