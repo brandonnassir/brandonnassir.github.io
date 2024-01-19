@@ -244,3 +244,21 @@ header, footer {
     background-color: #31a8b5; /* Choose a color that fits your design */
     margin-left: -1px; /* Adjust to center the bar (half of the width) */
     }
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .middle-column, .right-column {
+        flex: 1 0 100%;
+    }
+
+    .profile-picture, .project, .intro-box {
+        width: 100%; /* Adjust width to fit small screens */
+        margin: auto; /* Center align on small screens */
+    }
+
+    /* You can also adjust font sizes, padding, and other properties as needed */
+}
