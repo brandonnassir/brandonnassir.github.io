@@ -291,10 +291,13 @@ header, footer {
         margin: auto; /* Centers the bar and adds space below it */
     }
     
-    
+    .projects{
+        overflow-y: None;
+    }
     .project {
         margin-bottom: 20px; /* Adds space below each card */
-        overflow-y: None;
+        margin-left: 20px;
+        margin-right: 20px;
     /* Other styles as necessary */
     }
     .intro-box {
