@@ -255,10 +255,21 @@ header, footer {
         flex: 1 0 100%;
     }
 
+    .middle-column {
+        grid-template-columns: 1fr; /* Set to a single column layout */
+        grid-template-rows: auto; /* Rows size based on content */
+        gap: 20px; /* Adjust the gap as needed */
+    }
+
     .profile-picture, .project, .intro-box {
         width: 100%; /* Adjust width to fit small screens */
         margin: auto; /* Center align on small screens */
     }
 
-    /* You can also adjust font sizes, padding, and other properties as needed */
+    /* Adjustments for individual sections if necessary */
+    .skills, .certification-education {
+        /* Additional styling for these sections on small screens */
+    }
+
+    /* Other adjustments for font sizes, padding, etc., as needed */
 }
