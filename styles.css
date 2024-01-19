@@ -281,30 +281,32 @@ header, footer {
 
     .profile-container h2 {
         margin-top: 10px; /* Adds space above your name */
-        font-size: 1.5em; /* Adjust the font size as needed */
+        font-size: 1.8em; /* Adjust the font size as needed */
     }
 
     .vertical-bar {
-        width: 60%; /* Adjust the width of the bar */
+        width: 70%; /* Adjust the width of the bar */
         height: 6px; /* Adjust the height of the bar */
-        margin-top: 25%;
+        margin-top: 7%;
     
-        margin-left: auto;
-        margin-right: auto;/* Centers the bar and adds space below it */
+        margin-left: 9%;
+       
     }
     
     .projects{
-        overflow-y: None;
-        overflow-x: None;
+       overflow-y: visible; /* Disables vertical scrolling */
+        max-height: none; 
     }
     .project {
         margin-bottom: 20px; /* Adds space below each card */
         margin-left: 20px;
         margin-right: 20px;
+        width: 345px;
     /* Other styles as necessary */
     }
     .intro-box {
         margin-top: 20px; /* Adds space above the intro text */
+        width: 80%
     }
     /* Other adjustments for font sizes, padding, etc., as needed */
 }
