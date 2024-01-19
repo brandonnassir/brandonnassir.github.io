@@ -385,5 +385,10 @@ header, footer {
         margin-top: 20px; /* Adds space above the intro text */
         width: 80%
     }
+    
     /* Other adjustments for font sizes, padding, etc., as needed */
+    
+    .footer {
+        text-align: auto;
+    }
 }
