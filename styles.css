@@ -113,7 +113,7 @@ header, footer {
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     padding-top: 0px;
 }
@@ -122,8 +122,45 @@ header, footer {
     padding: 0;
     
 }
+.certification-education {
+    padding: 45px;
+    background-color: #31a8b5; /* As preferred */
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
 
-.skill {
+.certification-education h2 {
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.education-list {
+    list-style: none; /* Removes default list style */
+    padding: 0;
+}
+
+.education-list li {
+    margin-bottom: 15px; /* Adds space between entries */
+}
+
+.education-institution {
+    font-weight: bold; /* Highlights the institution name */
+    margin-bottom: 5px; /* Space between institution and degree */
+}
+
+.education-dates {
+    font-style: italic; /* Styles the dates */
+    margin-left: 10px; /* Space between institution name and dates */
+}
+
+.education-degree, .education-gpa {
+    margin-bottom: 5px; /* Space between degree and GPA */
+}
+.education li {
     margin-bottom: 10px;
 }
 
@@ -137,6 +174,7 @@ header, footer {
     height: 5px;
     background-color: #ddd;
     position: relative;
+    margin-bottom: 11px;
 }
 
 .skill-level {
@@ -243,6 +281,45 @@ header, footer {
     width: 266px; /* Adjust the width as needed */
     background-color: #31a8b5; /* Choose a color that fits your design */
     margin-left: -1px; /* Adjust to center the bar (half of the width) */
+    }
+
+    .certification-education h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+    
+    .education-list {
+        list-style-type: none; /* Removes default list bullet points */
+        padding: 0;
+    }
+    
+    .education-list li {
+        margin-bottom: 15px; /* Spacing between each education entry */
+    }
+    .education-list p {
+        font-size: 5px; /* Spacing between each education entry */
+        font-size: 16px;
+        color: white;
+    }
+    .university-name {
+        font-weight: bold; /* Makes university name stand out */
+        display: block; /* Ensures it starts on a new line */
+    }
+    
+    .study-period {
+        font-style: italic; /* Italicizes the study period */
+        display: block; /* New line for the study period */
+        font-size: small;
+        margin-top: 1px;
+        margin-bottom: 12px;
+    }
+    
+    .degree, .gpa {
+        margin: 5px 0; /* Spacing for degree and GPA */
+        color: #f0f0f0; /* Lighter color for details */
     }
 
 /* Media query for screens smaller than 600px */
