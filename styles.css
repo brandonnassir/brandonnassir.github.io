@@ -261,7 +261,7 @@ header, footer {
         gap: 20px; /* Adjust the gap as needed */
     }
 
-    .profile-picture, .project, .intro-box {
+    .project, .intro-box {
         width: 100%; /* Adjust width to fit small screens */
         margin: auto; /* Center align on small screens */
     }
@@ -270,6 +270,25 @@ header, footer {
     .skills, .certification-education {
         /* Additional styling for these sections on small screens */
     }
+    .profile-picture {
+        width: 80%; /* Adjust the width as needed */
+        max-width: 200px; /* Prevents the picture from being too large */
+        margin-bottom: 20px; /* Adds space below the picture */
+    }
 
+    .profile-container h2 {
+        margin-top: 10px; /* Adds space above your name */
+        font-size: 1.5em; /* Adjust the font size as needed */
+    }
+
+    .vertical-bar {
+        width: 50%; /* Adjust the width of the bar */
+        height: 4px; /* Adjust the height of the bar */
+        margin: 10px auto 20px; /* Centers the bar and adds space below it */
+    }
+
+    .intro-box {
+        margin-top: 20px; /* Adds space above the intro text */
+    }
     /* Other adjustments for font sizes, padding, etc., as needed */
 }
