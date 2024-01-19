@@ -268,6 +268,8 @@ header, footer {
 
     /* Adjustments for individual sections if necessary */
     .skills, .certification-education {
+        
+        /* Other styles as necessary */
         /* Additional styling for these sections on small screens */
     }
     .profile-picture {
@@ -289,7 +291,10 @@ header, footer {
     }
     
     
-    
+    .project {
+        margin-bottom: 20px; /* Adds space below each card */
+    /* Other styles as necessary */
+    }
     .intro-box {
         margin-top: 20px; /* Adds space above the intro text */
     }
