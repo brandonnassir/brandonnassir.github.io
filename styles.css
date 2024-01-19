@@ -351,7 +351,7 @@ header, footer {
     }
     .profile-picture {
         width: 80%; /* Adjust the width as needed */
-        max-width: 200px; /* Prevents the picture from being too large */
+        max-width: 250px; /* Prevents the picture from being too large */
         margin-bottom: 20px; /* Adds space below the picture */
         margin-top:20px;
     }
