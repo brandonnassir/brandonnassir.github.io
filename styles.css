@@ -388,7 +388,9 @@ header, footer {
     
     /* Other adjustments for font sizes, padding, etc., as needed */
     
-    .footer {
-        text-align: auto;
+    footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd; /* Change as you prefer */
     }
 }
