@@ -294,6 +294,7 @@ header, footer {
     
     .project {
         margin-bottom: 20px; /* Adds space below each card */
+        overflow-y: None;
     /* Other styles as necessary */
     }
     .intro-box {
