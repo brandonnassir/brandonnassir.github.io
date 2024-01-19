@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Change as you prefer */
+    background-color: #f9f9f9; /* Change as you prefer */
+}
+
+header {
+    display: flex;
+    grid-template-columns: auto;
+    align-items: stretch;
+    padding: 5px;
+    background-color: #eaeaea; /* Change as you prefer */
+}
+
+
+
+.profile-container {
+   
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    text-align: center;
+    position: relative;
+
+}
+
+
+
+.profile-picture {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    border: 8px solid #31a8b5; /* Add border with 2px width and color #333 */
+}
+
+.projects {
+    flex: 0.7; /* Takes up 1 portion of the space */
+    /* Ensure the projects are displayed in a column and aligned to the right */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Aligns items to the right */
+    /* Add padding or margin as needed */
+    padding-right: 1%; /* Adjust as needed */
+    padding-left: 1%; /* Adjust as needed */
+    text-align: auto;
+    overflow-y: auto;
+    max-height: 700px; /* Adjust the height as needed */
+    background-color: #f3f3f3;
+}
+
+
+.projects h1 {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+
+}
+
+
+.project {
+    width: 350px;
+    height: 375px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Card-like effect */
+    padding: 10px;
+    text-align: center;
+    background-color: #31a8b5;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd; /* Change as you prefer */
+}
+
+/* Add responsive design with media queries here if needed */
+
+/* Dynamic theme example: use CSS variables for colors and implement a theme switcher with JavaScript */
+:root {
+    --primary-color: #005f73; /* Change as you prefer */
+    --secondary-color: #0a9396; /* Change as you prefer */
+    --accent-color: #94d2bd; /* Change as you prefer */
+}
+
+body {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+header, footer {
+    background-color: var(--accent-color);
+}
+.skills, .certification-education {
+    padding: 45px;
+    background-color: #31a8b5; /* Change as you prefer */
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.skills h2, .certification-education h2{
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 0px;
+}
+.skills ul {
+    list-style: none; /* Removes default list styles */
+    padding: 0;
+    
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.skill-bar {
+    width: 100%; /* Adjust as needed */
+    height: 5px;
+    background-color: #ddd;
+    position: relative;
+}
+
+.skill-level {
+    position: absolute;
+    top: -5px; /* Adjust to center on the bar */
+    left: 0; /* Initially at the start of the bar */
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #007bff; /* Change as per your color scheme */
+}
+
+.skills li, .certification p, .education p {
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.certification, .education {
+    margin-bottom: 20px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: stretch;
+}
+
+.left-column {
+    flex: 0.5; /* Takes up 1 portion of the space */
+    
+    padding-bottom: 30px;
+    /* Add padding or margin as needed */
+    display: grid;
+    background-color: #f3f3f3
+    
+}
+
+.right-column {
+    flex: 0.7; /* Takes up 1 portion of the space */
+    /*padding-right: 30px;*/
+    padding-bottom: 30px;
+    display: grid;
+    background-color: #f3f3f3
+    
+}
+
+.middle-column {
+    flex: 1; /* Takes up 1 portion of the space */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px; /* Spacing between grid items */
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* Add padding or margin as needed */
+    display: grid;
+    background-color: #f3f3f3
+}
+.project-image {
+    display: inline-block;
+    overflow-x: scroll;
+    width: 120px;
+    height: 120px;
+}
+.intro-box {
+    word-wrap: break-word;
+
+    /* Optional: Adds a subtle shadow */
+
+    
+    height: auto;
+    margin-bottom: auto;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; /* Secolor of the box */ /* Add a border to the box */
+/* Display the text as an inline block */
+}
+
+.intro-box p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0%;
+    margin-left: 25px;
+    }
+/* Modify or add styles for individual project items if needed */
+.profile-container h2 {
+
+    display: block;
+    font-size: 26.7px;
+    
+    margin-top: -50px;
+    margin-bottom: 1px;
+    }
+    
+.vertical-bar {
+    position: absolute;
+    left: 24.5px; /* Adjust to align with the center of your name */
+    top: 92%; /* Positioning right below the name */
+    height: 6px; /* Adjust the height as needed */
+    width: 266px; /* Adjust the width as needed */
+    background-color: #31a8b5; /* Choose a color that fits your design */
+    margin-left: -1px; /* Adjust to center the bar (half of the width) */
+    }
