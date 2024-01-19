@@ -276,6 +276,7 @@ header, footer {
         width: 80%; /* Adjust the width as needed */
         max-width: 200px; /* Prevents the picture from being too large */
         margin-bottom: 20px; /* Adds space below the picture */
+        margin-top:20px;
     }
 
     .profile-container h2 {
@@ -284,10 +285,10 @@ header, footer {
     }
 
     .vertical-bar {
-        width: 50%; /* Adjust the width of the bar */
-        height: 4px; /* Adjust the height of the bar */
-        margin-top: 10%;
-        margin: 20px auto 20px; /* Centers the bar and adds space below it */
+        width: 60%; /* Adjust the width of the bar */
+        height: 6px; /* Adjust the height of the bar */
+        margin-top: 15%;
+        margin: auto; /* Centers the bar and adds space below it */
     }
     
     
