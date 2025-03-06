@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+    crossorigin="anonymous"
+  >
+  
+  <!-- Custom CSS (matching your homepage style) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Slideshow-Specific Styles (from your original code) -->
+  <style>
+    * { box-sizing: border-box; }
+    .mySlides { display: none; }
+    img { vertical-align: middle; }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    .dot.active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 3.8s;
+    }
+    @keyframes fade {
+      from { opacity: .4 }
+      to { opacity: 1 }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text { font-size: 11px }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar Navigation (matches homepage style) -->
+  <nav class="sidebar d-flex flex-column align-items-start p-3">
+    <div>
+      <a href="./index.html" class="nav-link mb-3">Home</a>
+      <a href="./about.html" class="nav-link mb-3">About</a>
+      <a href="resume/Graduate_School_Resume.pdf" target="_blank" class="nav-link mb-3">Resume</a>
+      <a href="./contact.html" class="nav-link active-link">Contact</a>
+   </div>
+
+    <!-- Sidebar Footer (moved here per your request) -->
+    <footer class="mt-5">
+      <div class="container text-center py-4">
+         <div class="mb-3">
+            <a href="mailto:xingyinxu@gmail.com" target="_blank" class="footer-icon">
+              <img src="images/icons/gmail.png" alt="gmail" height="40">
+            </a>
+            <a href="https://linkedin.com/in/xingyin-xu/" target="_blank" class="footer-icon">
+              <img src="images/icons/linkedin.png" alt="LinkedIn" height="40">
+            </a>
+            <a href="https://github.com/yinyin0916" target="_blank" class="footer-icon">
+              <img src="images/icons/github.png" alt="Github" height="40">
+            </a>
+         </div>
+         <div style="font-family:'Georgia';">
+           Copyright &copy;
+           <span id="year"></span>
+           All Rights Reserved
+         </div>
+      </div>
+   </footer>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+
+    <!-- ABOUT ME SECTION -->
+    <div class="container py-4">
+      <div class="row align-items-center mb-4">
+        <!-- Text Column -->
+        <div class="col-md-8">
+          <h2 class="mb-3" style="font-family:'Georgia';"><strong>About Me</strong></h2>
+          <p style="font-size:larger; font-family:'Georgia';">
+            My background in <strong style="color: #568ef5;">Physics</strong> has equipped me with the quantitative and analytical skills necessary to tackle a wide range of problems. 
+            Over the past few years, I’ve been able to transfer this knowledge into the data-centric domains of <strong style="color: #568ef5;">machine learning</strong> and <strong style="color: #568ef5;">natural language processing</strong>. 
+
+            <br><br>
+            <strong style="color: #568ef5;">My experience as a tutor</strong> has given me unique insights into the challenges students face when preparing for exams like the SAT.
+            Currently, my work involves leveraging <strong style="color: #568ef5;">causal inference</strong> and <strong style="color: #568ef5;">generative text models</strong> to develop tools for adaptive learning and content generation, 
+            specifically aimed at the SAT and ACT exams.
+            My mission is to reimagine education through the lens of 
+            generative AI and expand access to <strong style="color: #568ef5;">affordable tutoring.</strong>
+          </p>
+        </div>
+        <!-- Image Column (Replace 'aboutme.jpg' with your actual image) -->
+        <div class="col-md-4 text-center">
+          <img 
+            src="images/about_me/graduation.JPG" 
+            alt="About Me" 
+            class="img-fluid rounded" 
+            style="max-width: 80%;"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH INTEREST SECTION -->
+    <div class="container py-4">
+      <div class="row align-items-center mb-4">
+        <!-- Text Column -->
+        <div class="col-md-8">
+          <h2 class="mb-3" style="font-family:'Georgia';"><strong>Research Interest</strong></h2>
+          <p style="font-size:larger; font-family:'Georgia';">
+            
+            My research explores the intersection of Natural Language Processing, Causal Inference, 
+            and AI-driven question generation. Specifically, I investigate:  
+            
+            <ul>
+            <li>
+            How do linguistic features and syntactic structures in test questions impact students' comprehension and responses?  
+            </li>
+
+            <li>
+            How can language models be leveraged to enhance the
+            capabilities of traditional, more rigid question generators?
+            </li>
+
+            <li>
+            How can machine learning provide
+            insights into the latent variables that contribute to a problem's perceived difficulty in a way that
+            is interpretable and actionable for both students and teachers?
+            </ul>
+            More broadly, my goal is to identify the key features that contribute to a problem’s difficulty and leverage those insights to better align assessments with students’ learning objectives.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img 
+            src="images/about_me/problem_synthesis.png"
+            alt="Research" 
+            class="img-fluid rounded" 
+            style="max-width: 80%;"
+          >
+        </div>
+      </div>
+    </div> 
+
+    <!-- TUTORING SERVICES SECTION -->
+    <div class="container mb-4">
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-8">
+          <h2 class="mb-3" style="font-family:'Georgia';"><strong>Tutoring Services</strong></h2>
+          <p style="font-size:larger; font-family:'Georgia';">
+            <!-- 
+              Write about your tutoring services here. Example:
+              I offer tutoring sessions in statistics, data analysis, and more, both online and in person, etc.
+            -->
+            For the past several years i've tutored students of all skill levels in diffrent areas of Math and Science with a paticular focus on preparing students for their SAT/ACT exams. 
+            Recognizing the significant time and financial investment these exams require I am to provide premium educational experience. 
+            I am passionate about democratizing access to education and evening the playing field for students who come from underpriveledged backgrounds. 
+            In the coming months I will be launching a Test Prep site that provides access to a large volume of practice problems and resources for tutors to manage their students needs more effectively.
+            If you are interested in learning more about my tutoring services please feel free to <a href="./contact.html" style="color: #568ef5;"><strong>contact me</strong></a>.
+            <br><br>
+          </p>
+        </div>
+        <!-- Image Column (Replace 'tutoring.jpg' with your actual image) -->
+        <div class="col-md-4 text-center">
+          <img 
+            src="images/projects/sat1.png" 
+            alt="Tutoring" 
+            class="img-fluid rounded" 
+            style="max-width: 80%;"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- MY HOBBIES SECTION WITH SLIDESHOW -->
+    <div class="container mb-4">
+      <h2 class="mb-3" style="font-family:'Georgia';"><strong>Other things about me</strong></h2>
+      <p style="font-size:larger; font-family:'Georgia';">
+        I’m currently training for my first half marathon in April! 🏃🏾 I have a deep appreciation for live performances, 
+        especially Broadway theater, and a quiet passion for mixing and mastering music 🎧🎹—you can check out my <a href="https://m.soundcloud.com" style="color: #568ef5;"><strong>SoundCloud</strong></a> here.
+        I’m also a huge movie fan, with Interstellar, The Dark Knight, and Dune: Part II ranking among my top favorites.
+      </p>
+    </div>
+
+    <!-- Slideshow Container -->
+    <div class="container slideshow-container mb-5">
+      <div class="mySlides fade">
+        <img src="images/hobbies/wicked.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/hobbies/movies1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/hobbies/djay.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <img src="images/hobbies/brooklyn-half-marathon-finish_h.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <!-- Slideshow Indicators -->
+    <div class="container text-center mb-5">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Footer -->
+
+
+  </main><!-- end content-wrapper -->
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+  </script>
+
+  <!-- Auto Year Script -->
+  <script>
+    let date = new Date();
+    document.getElementById("year").textContent = date.getFullYear();
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

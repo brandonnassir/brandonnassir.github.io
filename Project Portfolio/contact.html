@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Contact</title>
+
+      <!-- Bootstrap CSS -->
+      <link 
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+         rel="stylesheet" 
+         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+         crossorigin="anonymous"
+      >
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css">
+   </head>
+
+   <body>
+
+      <!-- Sidebar Navigation -->
+      <!-- Now using flex column + justify-content-between to push footer down -->
+      <nav class="sidebar d-flex flex-column justify-content-between p-3">
+         <!-- Navigation Links -->
+         <div>
+            <a href="./index.html" class="nav-link mb-3">Home</a>
+            <a href="./about.html" class="nav-link mb-3">About</a>
+            <a href="resume/Graduate_School_Resume.pdf" target="_blank" class="nav-link mb-3">Resume</a>
+            <a href="./contact.html" class="nav-link active-link">Contact</a>
+         </div>
+
+         <!-- Sidebar Footer (moved here per your request) -->
+         <footer class="mt-5">
+            <div class="container text-center py-4">
+               <div class="mb-3">
+                  <a href="mailto:brandon.nassir23@gmail.com" target="_blank" class="footer-icon">
+                    <img src="images/icons/gmail.png" alt="gmail" height="40">
+                  </a>
+                  <a href="https://www.linkedin.com/in/brandon-washington-278a79253/" target="_blank" class="footer-icon">
+                    <img src="images/icons/linkedin.png" alt="LinkedIn" height="40">
+                  </a>
+                  <a href="https://github.com/brandonnassir" target="_blank" class="footer-icon">
+                    <img src="images/icons/github.png" alt="Github" height="40">
+                  </a>
+               </div>
+               <div style="font-family:'Georgia';">
+                 Copyright &copy;
+                 <span id="year"></span>
+                 All Rights Reserved
+               </div>
+            </div>
+         </footer>
+      </nav>
+      
+      <!-- Main Content Area -->
+      <main class="content-wrapper">
+         <!-- Heading / Intro -->
+         <div class="container my-4">
+            <h1 class="mb-3" style="font-family:'Georgia'"><strong>Brandon Washington</strong></h1>
+            <p class="lead" style="font-family:'Courier New', Courier, monospace; font-style: italic; font-weight:bold; font-size:medium;">
+               <!-- Optional tagline #1 -->
+            </p>
+            <p class="lead" style="font-family:'Courier New', Courier, monospace; font-style: italic; font-weight:bold; font-size:medium;">
+               <!-- Optional tagline #2 -->
+            </p>
+         </div>
+
+         <!-- Contact Info -->
+         <div class="container my-3">
+            <p style="font-size: larger; font-family:'Georgia';">
+               Feel free to reach out and connect with me! I am always open to new opportunities and collaborations.
+            </p>
+            <div style="margin-top: 50px;">
+               <!-- Gmail -->
+
+               
+               <!-- LinkedIn -->
+               <a href="https://www.linkedin.com/in/brandon-washington-278a79253/" target="_blank" class="footer-icon">
+                  <img src="images/icons/linkedin.png" alt="LinkedIn" height="40">
+               </a>
+               <span style="margin-left: 5px; font-family:'Georgia'">
+                  LinkedIn Profile
+               </span>
+               <br><br>
+               <a href="mailto:brandon.nassir23@gmail.com" target="_blank" class="footer-icon">
+                  <img src="images/icons/gmail.png" alt="gmail" height="40">
+                </a>
+               <span style="margin-left: 5px; font-family:'Georgia'">
+                  My Primary Email
+               </span>
+               <br><br>
+               <!-- GitHub -->
+               <a href="https://github.com/brandonnassir" target="_blank" class="footer-icon">
+                  <img src="images/icons/github.png" alt="Github" height="40">
+                </a>
+               <span style="margin-left: 5px; font-family:'Georgia'">
+                  My Projects
+               </span>
+               <br>
+            </div>
+         </div>
+
+      </main>
+
+      <!-- Auto Year Script -->
+      <script>
+         let date = new Date();
+         let thisyear = date.getFullYear();
+         document.getElementById("year").innerHTML = thisyear;
+      </script>
+
+      <!-- Bootstrap JS Bundle -->
+      <script 
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+         crossorigin="anonymous">
+      </script>
+   </body>
+</html>

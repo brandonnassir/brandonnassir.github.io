@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brandon's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+  >
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar d-flex flex-column align-items-start p-3">
+    <div>
+      <a href="./index.html" class="nav-link mb-3">Home</a>
+      <a href="./about.html" class="nav-link mb-3">About</a>
+      <a href="resume/Graduate_School_Resume.pdf" target="_blank" class="nav-link mb-3">Resume</a>
+      <a href="./contact.html" class="nav-link active-link">Contact</a>
+    </div>
+    <footer class="mt-5 footer-bottom">
+      <div class="container text-center py-4">
+        <div class="mb-3">
+          <a href="mailto:brandon.nassir23@gmail.com" target="_blank" class="footer-icon">
+            <img src="images/icons/gmail.png" alt="gmail" height="40">
+          </a>
+          <a href="https://www.linkedin.com/in/brandon-washington-278a79253/" target="_blank" class="footer-icon">
+            <img src="images/icons/linkedin.png" alt="LinkedIn" height="40">
+          </a>
+          <a href="https://github.com/brandonnassir" target="_blank" class="footer-icon">
+            <img src="images/icons/github.png" alt="Github" height="40">
+          </a>
+        </div>
+        <div style="font-family:'Georgia';">
+          Copyright &copy;
+          <span id="year"></span>
+          All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content-wrapper">
+
+    <!-- Introduction Section -->
+    <div class="container pt-4">
+      <div class="row align-items-center mb-5">
+        <!-- Text Column -->
+        <div class="col-md-6 order-md-1 mb-4">
+          <h1 class="display-4 fw-bold" style="font-family: 'Georgia';">
+            Brandon Nassir Washington
+          </h1>
+          <p style="font-family:'Courier New', Courier, monospace;font-style: italic;font-weight:bold;font-size:medium;">
+            <!-- Insert any tagline or short text if desired -->
+          </p>
+          <p style="font-family:'Courier New', Courier, monospace;font-style: italic;font-weight:bold;font-size:medium;">
+            <!-- Insert a second short text or tagline if desired -->
+          </p>
+        </div>
+        <!-- Image Column -->
+        <div class="col-md-6 order-md-2 text-center">
+          <img 
+            src="images/profile_pic.jpeg" 
+            alt="my pic" 
+            class="img-fluid rounded"
+            style="max-width: 70%;"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- About/Personal Statement -->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="mb-3" style="font-family: 'Georgia';"><strong>Hey!</strong></h2>
+          <p style="font-family:'Georgia';font-size: larger;">
+            I am a soon to be Master's student pursuing a degree in 
+            <strong style="color: #568ef5;">Data Science</strong>
+            I received my Bachelor's degree at Binghamton University in 2023 where I majored in 
+            <strong style="color: #568ef5;">Physics</strong>
+            I have a strong passion for education and technology.
+            My work focuses on leveraging Natural Language Processing and Machine Learning to create adaptive learning tools. 
+            I am eager to continue exploring innovative solutions for personalized education.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Projects Section -->
+    <div class="container mb-5">
+      <h2 class="mb-4" style="font-family:'Georgia';"><strong>Projects</strong></h2>
+
+      <!-- Project Navigation -->
+      <div class="project-nav text-center mb-4" id="myBtnContainer">
+        <button class="btn" onclick="scrollToProject('proj1')">SAT Problem Rec System</button>
+        <button class="btn" onclick="scrollToProject('proj2')">Predicting Crime in LA</button>
+        <button class="btn" onclick="scrollToProject('proj3')">Analyzing Embeddings of SAT Math Questions</button>
+        <button class="btn" onclick="scrollToProject('proj4')">Generating SAT Math Problems</button>
+        <button class="btn" onclick="scrollToProject('proj5')">Analyzing Speed Bump Effectiveness</button>
+      </div>
+
+      <!-- Horizontally Scrolling Container -->
+      <div class="projects-horizontal">
+        
+        <!-- Project 1 -->
+        <div class="project-card" id="proj1">
+          <a href="https://github.com/brandonnassir/SAT_Problem_Reccomender_System" target="_blank" rel="noopener noreferrer" class="card-link">
+            <div class="card text-center">
+              <img 
+                src="images/projects/matrix.png" 
+                class="card-img-top mx-auto d-block" 
+                alt="SAT" 
+                style="max-width: 90%;"
+              >
+              <div class="card-body">
+                <h5 class="card-title">SAT Problem Recommendation System</h5>
+                <p class="card-text">
+                  In this project I developed a content-based filtering algorithm with TensorFlow to recommend SAT problems 
+                  to students based on results from a diagnostic exam.
+                </p>
+              </div>
+              <div class="card-footer custom-card-footer">
+                <div class="footer-row top-row">
+                  <div class="footer-box skill">Recommendation Systems</div>
+                  <div class="footer-box skill">Collaborative Filtering</div>
+                  <div class="footer-box skill">TensorFlow</div>
+                  <div class="footer-box skill">Python</div>
+                </div>
+                <div class="footer-row bottom-row">
+                  <a href="https://github.com/yinyin0916/VisualTracker/blob/master/MOT16%20VisualTracker.pdf" 
+                     class="footer-box link" 
+                     target="_blank"
+                  >
+                    Visual Analysis
+                  </a>
+                  <a href="https://github.com/yinyin0916/VisualTracker/tree/master" 
+                     class="footer-box link" 
+                     target="_blank"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" id="proj2">
+          <a href="https://github.com/brandonnassir/Predictive_Policing_Model" 
+            target="_blank" rel="noopener noreferrer" 
+            class="card-link">
+            <div class="card text-center">
+              <img 
+                src="images/projects/crime_heatmap.jpg" 
+                class="card-img-top mx-auto d-block"
+                alt="Predicting Crime in LA"
+                style="max-width: 90%;"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Predicting Crime in Los Angeles</h5>
+                <p class="card-text">
+                  Understanding crime patterns is essential for effective policing. In this project, I create an 
+                  LSTM model capable of predicting when and where crime will most likely occur in the City of Los Angeles.
+                </p>
+              </div>
+              <div class="card-footer custom-card-footer">
+                <div class="footer-row top-row">
+                  <div class="footer-box skill">Geo-Spatial Analysis</div>
+                  <div class="footer-box skill">Time Series Analysis</div>
+                  <div class="footer-box skill">LSTM Models</div>
+                  <div class="footer-box skill">Data Visualization</div>
+                </div>
+                <div class="footer-row bottom-row">
+                  <a href="https://github.com/brandonnassir/Predictive_Policing_Model/blob/main/Predictive_policing_EDA.ipynb" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Visualize Crime in LA
+                  </a>
+                  <a href="https://github.com/brandonnassir/Predictive_Policing_Model" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" id="proj3">
+          <a href="images/projects/embeddings.html"
+            target="_blank" rel="noopener noreferrer" 
+            class="card-link">
+            <div class="card text-center">
+              <img
+                src="images/projects/pca_projection.png" 
+                class="card-img-top mx-auto d-block"
+                alt="GPT Embeddings"
+                style="max-width: 90%;"
+              >
+              <div class="card-body">
+                <h5 class="card-title">
+                  Analyzing the Embedding Space of GPT-4o via SAT Problems
+                </h5>
+                <p class="card-text">
+                  Understanding how LLMs relate different features of SAT problems is quintessential to 
+                  training them to generate problems. Here I investigate the semantic, syntactic and 
+                  conceptual correlation between problems and their perceived difficulty.
+                </p>
+              </div>
+              <div class="card-footer custom-card-footer">
+                <div class="footer-row top-row">
+                  <div class="footer-box skill">Data Visualization</div>
+                  <div class="footer-box skill">K-means clustering</div>
+                  <div class="footer-box skill">Dimensionality Reduction</div>
+                </div>
+                <div class="footer-row bottom-row">
+                  <a href="images/projects/embeddings.html" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Visualize problem distributions with Plotly
+                  </a>
+                  <a href="https://github.com/brandonnassir/Analyzing_SAT_Embeddings" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" id="proj4">
+          <a href="./sat_problems_evolution.html" 
+            target="_blank" rel="noopener noreferrer" 
+            class="card-link">
+            <div class="card text-center">
+              <img 
+                src="images/projects/problem_evolution.png" 
+                class="card-img-top mx-auto d-block"
+                alt="Generating SAT Math"
+                style="max-width: 90%;"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Generating SAT Math Questions</h5>
+                <p class="card-text">
+                  Using LLMs to generate SAT Math problems at the same level and quality as those 
+                  created by traditional content vendors is a non-trivial task. 
+                  Here I develop a system to generate SAT questions using LLMs and then conduct 
+                  an statistical analysis on core problem features.
+                </p>
+              </div>
+              <div class="card-footer custom-card-footer">
+                <div class="footer-row top-row">
+                  <div class="footer-box skill">Python</div>
+                  <div class="footer-box skill">Fine-Tuning</div>
+                  <div class="footer-box skill">Openai API</div>
+                </div>
+                <div class="footer-row bottom-row">
+                  <a href="./sat_problems_evolution.html" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Visualization
+                  </a>
+                  <a href="https://github.com/brandonnassir/Generating_SAT_Questions" 
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" id="proj5">
+          <a href="/Users/brandonwashington/web_dev_projects/Project Portfolio Prototype/Speed Bump Analysis.pdf" 
+            target="_blank" rel="noopener noreferrer" 
+            class="card-link">
+            <div class="card text-center">
+              <img 
+                src="images/projects/speedbumbs_zoom1.png" 
+                class="card-img-top mx-auto d-block"
+                alt="Speed Bumps"
+                style="max-width: 90%;"
+              >
+              <div class="card-body">
+                <h5 class="card-title">Analyzing the Effectiveness of Speed Bumps in NYC</h5>
+                <p class="card-text">
+                  For my qualifying project to the 2024 Alteryx Datathon I analyzed the effectiveness of speed bumps 
+                  in NYC by analyzing trends in crash data before and after speed bumb installation.
+                </p>
+              </div>
+              <div class="card-footer custom-card-footer">
+                <div class="footer-row top-row">
+                  <div class="footer-box skill">Alteryx</div>
+                  <div class="footer-box skill">Geo-Spatial Analysis</div>
+                </div>
+                <div class="footer-row bottom-row">
+                  <a href="/Users/brandonwashington/web_dev_projects/Project Portfolio Prototype/Speed Bump Analysis.pdf"
+                     class="footer-box link"
+                     target="_blank"
+                  >
+                    Report
+                  </a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div> <!-- end .projects-horizontal -->
+    </div> <!-- end container -->
+
+    <!-- Skills & Tools -->
+    <div class="container mb-5">
+      <h2 class="mb-4" style="font-family:'Georgia';"><strong>Skills</strong></h2>
+      
+      <div class="row">
+        
+        <!-- Column 1: Data Science -->
+        <div class="col-md-4 mb-4 text-center">
+          <h3 style="font-family:'Georgia';"><strong>Data Science</strong></h3>
+          <div class="mt-3">
+            <img height="40" alt="sql" src="images/icons/sklearn.png"/>
+            <img height="40" alt="excel" src="images/icons/TensorFlow_logo.png"/>
+            <img height="40" alt="sql" src="images/icons/Matlab.png"/>
+          </div>
+        </div>
+        
+        <!-- Column 2: Tools -->
+        <div class="col-md-4 mb-4 text-center">
+          <h3 style="font-family:'Georgia';"><strong>Languages</strong></h3>
+          <div class="mt-3">
+            <img height="40" alt="Python" src="images/icons/python.png"/>
+            <img height="40" alt="R" src="images/icons/R.png"/>
+            <img height="40" alt="sql" src="images/icons/sql.png"/>
+            <img height="40" alt="JavaScript" src="images/icons/JavaScript-logo.png"/>
+            <img height="40" alt="html" src="images/icons/html.png"/>
+          </div>
+        </div>
+        
+        <!-- Column 3: Certifications -->
+        <div class="col-md-4 mb-4 text-center">
+          <h3 style="font-family:'Georgia';"><strong>Certifications</strong></h3>
+          <div class="mt-3">
+            <img height="40" alt="Machine Learning Specialization" src="images/icons/Specialization-logo.png"/>
+            <img height="40" alt="Deep Learning Specialization" src="images/icons/Specialization-logo-2.png"/>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Footer -->
+    
+  </main>
+
+  <!-- Filter JavaScript -->
+  <script>
+    // If you’re still using filterSelection, keep or remove as needed
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c === "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Highlight active button
+    var btnContainer = document.getElementById("myBtnContainer");
+    if (btnContainer) {
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+          var current = document.getElementsByClassName("active");
+          if (current[0]) {
+            current[0].className = current[0].className.replace(" active", "");
+          }
+          this.className += " active";
+        });
+      }
+    }
+  </script>
+
+  <!-- Scroll to Project Script -->
+  <script>
+    function scrollToProject(projectId) {
+      const container = document.querySelector('.projects-horizontal');
+      const projectEl = document.getElementById(projectId);
+      
+      // Calculate the position to center the project in the container
+      const scrollPosition = projectEl.offsetLeft 
+        - (container.offsetWidth / 2) 
+        + (projectEl.offsetWidth / 2);
+  
+      // Smoothly scroll the container horizontally
+      container.scrollTo({
+        left: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+  
+  <!-- Auto Year Script -->
+  <script>
+    let date = new Date();
+    let thisyear = date.getFullYear();
+    document.getElementById("year").innerHTML = thisyear;
+  </script>
+
+  <!-- Bootstrap JS Bundle -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous">
+  </script>
+</body>
+</html>

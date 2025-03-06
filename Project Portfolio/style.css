@@ -1,0 +1,224 @@
+/* 
+  style.css 
+  - Fix for tallest card cut off by aligning flex items at the start
+  - Additional aesthetics (border-radius, softened box shadow, etc.)
+*/
+
+/* Body and Global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F0F4F8;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #2C3E50; /* Dark navy */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+  /* Add these or ensure they exist: */
+
+.sidebar .nav-link {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px 0;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #1ABC9C; /* Teal highlight */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Main Content Wrapper */
+.content-wrapper {
+  margin-left: 220px; /* Avoid overlapping with sidebar */
+  padding: 20px;
+}
+
+/* Project Card Link */
+.card-link {
+  color: #2C3E50;
+  text-decoration: none;
+}
+.card-link:hover {
+  color: #1ABC9C;
+  text-decoration: none;
+}
+
+/* Buttons */
+#myBtnContainer {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  margin: 3px;
+  background-color: #DCE3E8;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+
+.btn.active {
+  background-color: #1ABC9C;
+  color: #fff;
+}
+
+/* Overwrite .btn-outline-primary hover */
+.btn-outline-primary:hover {
+  background-color: #1ABC9C;
+  color: #fff;
+  border-color: #1ABC9C;
+}
+
+/* Horizontal Projects Container */
+.projects-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  /* Align items at the start so taller cards are fully visible */
+  align-items: flex-start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
+/* Card Sizing & Layout */
+.project-card {
+  flex: 0 0 auto;
+  width: 350px; /* consistent width */
+}
+
+.card {
+  /* Let the card expand vertically as needed */
+  display: flex;
+  flex-direction: column;
+
+  /* Subtle border radius and box shadow for aesthetics */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  overflow: hidden; /* ensures round corners on images etc. */
+}
+
+.card img {
+  /* Make top corners also rounded */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  background-color: #FFFFFF;
+  padding: 1rem 1.2rem;
+  flex: 1 1 auto; /* Ensure body can grow */
+}
+
+/* Footer Container within each Card */
+.card-footer.custom-card-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  border-top: 1px solid #ddd;
+  background-color: #F6FAFB; 
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  padding: 0.65rem 0;
+}
+
+/* Keep a neutral background for the rows */
+.top-row {
+  background-color: #FFFFFF;
+}
+.bottom-row {
+  background-color: #FFFFFF;
+}
+
+/* Distinct Classes for Skills vs. Links 
+   Each uses a different accent color for text.
+   On hover, invert to white text + colored background.
+*/
+.footer-box {
+  flex: 1;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin: 0 3px;
+  padding: 0.5rem 0;
+  color: #2C3E50;
+  text-decoration: none; 
+  background-color: transparent;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* 1) Skill color scheme */
+.footer-box.skill {
+  color: #598fb6;
+}
+.footer-box.skill:hover {
+  background-color: #598fb6;
+  color: #fff;
+}
+
+/* 2) Link color scheme */
+.footer-box.link {
+  color: #5ccab6;
+}
+.footer-box.link:hover {
+  background-color: #5ccab6;
+  color: #fff;
+}
+
+/* Footer Icons in site footer */
+.footer-icon {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .sidebar {
+    width: 180px;
+  }
+  .content-wrapper {
+    margin-left: 180px;
+  }
+  .btn {
+    padding: 8px 10px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+
+
+
