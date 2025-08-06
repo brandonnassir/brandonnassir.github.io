@@ -19,6 +19,11 @@
 
    <body>
 
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+        ☰
+      </button>
+
       <!-- Sidebar Navigation -->
       <!-- Now using flex column + justify-content-between to push footer down -->
       <nav class="sidebar d-flex flex-column justify-content-between p-3">
@@ -102,6 +107,24 @@
          </div>
 
       </main>
+
+      <!-- Mobile Menu Toggle Script -->
+      <script>
+        function toggleMobileMenu() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.classList.toggle('mobile-active');
+        }
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+          const sidebar = document.querySelector('.sidebar');
+          const toggle = document.querySelector('.mobile-menu-toggle');
+          
+          if (!sidebar.contains(event.target) && !toggle.contains(event.target)) {
+            sidebar.classList.remove('mobile-active');
+          }
+        });
+      </script>
 
       <!-- Auto Year Script -->
       <script>

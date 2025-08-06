@@ -18,6 +18,11 @@
 </head>
 <body>
 
+  <!-- Mobile Menu Toggle -->
+  <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+    ☰
+  </button>
+
   <!-- Sidebar Navigation -->
   <nav class="sidebar d-flex flex-column align-items-start p-3">
     <div>
@@ -71,7 +76,7 @@
           <img 
             src="images/profile_pic.jpeg" 
             alt="my pic" 
-            class="img-fluid rounded"
+            class="img-fluid rounded profile-image"
             style="max-width: 70%;"
           >
         </div>
@@ -139,13 +144,7 @@
                   <div class="footer-box skill">Python</div>
                 </div>
                 <div class="footer-row bottom-row">
-                  <a href="https://github.com/yinyin0916/VisualTracker/blob/master/MOT16%20VisualTracker.pdf" 
-                     class="footer-box link" 
-                     target="_blank"
-                  >
-                    Visual Analysis
-                  </a>
-                  <a href="https://github.com/yinyin0916/VisualTracker/tree/master" 
+                  <a href="https://github.com/brandonnassir/SAT_Problem_Reccomender_System" 
                      class="footer-box link" 
                      target="_blank"
                   >
@@ -297,7 +296,7 @@
 
         <!-- Project 5 -->
         <div class="project-card" id="proj5">
-          <a href="/Users/brandonwashington/web_dev_projects/Project Portfolio Prototype/Speed Bump Analysis.pdf" 
+          <a href="Speed%20Bump%20Analysis.pdf" 
             target="_blank" rel="noopener noreferrer" 
             class="card-link">
             <div class="card text-center">
@@ -320,7 +319,7 @@
                   <div class="footer-box skill">Geo-Spatial Analysis</div>
                 </div>
                 <div class="footer-row bottom-row">
-                  <a href="/Users/brandonwashington/web_dev_projects/Project Portfolio Prototype/Speed Bump Analysis.pdf"
+                  <a href="Speed%20Bump%20Analysis.pdf"
                      class="footer-box link"
                      target="_blank"
                   >
@@ -450,6 +449,24 @@
     }
   </script>
   
+  <!-- Mobile Menu Toggle Script -->
+  <script>
+    function toggleMobileMenu() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('mobile-active');
+    }
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+      const sidebar = document.querySelector('.sidebar');
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      
+      if (!sidebar.contains(event.target) && !toggle.contains(event.target)) {
+        sidebar.classList.remove('mobile-active');
+      }
+    });
+  </script>
+
   <!-- Auto Year Script -->
   <script>
     let date = new Date();
