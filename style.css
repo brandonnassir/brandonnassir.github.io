@@ -42,6 +42,13 @@ body {
   text-decoration: none;
 }
 
+.sidebar .nav-link.active-link {
+  background-color: #1ABC9C;
+  color: #ffffff;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
 /* Main Content Wrapper */
 .content-wrapper {
   margin-left: 220px; /* Avoid overlapping with sidebar */
