@@ -45,6 +45,7 @@
             display: flex;
             flex-direction: column;
             gap: 16px;
+            flex-shrink: 0;
         }
         .preview-card {
             background: white;
@@ -216,6 +217,7 @@
             gap: 8px;
             margin-bottom: 16px;
             justify-content: center;
+            flex-wrap: wrap;
         }
         .tab-button {
             padding: 10px 24px;
@@ -239,6 +241,196 @@
         }
         .tab-button.active:hover {
             background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+        }
+        
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 1024px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                flex-direction: column;
+                height: auto;
+                min-height: calc(100vh - 24px);
+                gap: 16px;
+            }
+            .plot-container {
+                min-height: 50vh;
+                padding: 16px;
+            }
+            .side-panel {
+                width: 100%;
+                flex-direction: column;
+            }
+            .preview-card {
+                max-height: 50vh;
+            }
+            .legend-card {
+                max-height: 200px;
+            }
+            #plot {
+                min-height: 350px;
+            }
+            .main-title {
+                font-size: 18px;
+            }
+            .subtitle {
+                font-size: 13px;
+                margin-bottom: 12px;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 8px;
+            }
+            .container {
+                gap: 12px;
+            }
+            .plot-container {
+                padding: 12px;
+                border-radius: 12px;
+            }
+            .preview-card {
+                padding: 16px;
+                border-radius: 12px;
+            }
+            .legend-card {
+                padding: 16px;
+                border-radius: 12px;
+            }
+            .main-title {
+                font-size: 16px;
+            }
+            .subtitle {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            .tabs-container {
+                gap: 6px;
+            }
+            .tab-button {
+                padding: 8px 16px;
+                font-size: 13px;
+                border-radius: 8px;
+            }
+            .preview-header {
+                font-size: 16px;
+                margin-bottom: 12px;
+                padding-bottom: 10px;
+            }
+            .problem-text {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+            .badge {
+                padding: 3px 10px;
+                font-size: 11px;
+            }
+            .option {
+                padding: 8px 12px;
+                font-size: 13px;
+            }
+            .legend-title {
+                font-size: 14px;
+            }
+            .legend-item {
+                font-size: 13px;
+                padding: 5px 0;
+            }
+            .legend-color {
+                width: 14px;
+                height: 14px;
+            }
+            #plot {
+                min-height: 300px;
+            }
+            .preview-placeholder {
+                padding: 30px 16px;
+                font-size: 14px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 6px;
+            }
+            .container {
+                gap: 10px;
+            }
+            .plot-container {
+                padding: 10px;
+                border-radius: 10px;
+                min-height: 45vh;
+            }
+            .preview-card {
+                padding: 12px;
+                border-radius: 10px;
+            }
+            .legend-card {
+                padding: 12px;
+                border-radius: 10px;
+                max-height: 150px;
+            }
+            .main-title {
+                font-size: 14px;
+            }
+            .subtitle {
+                font-size: 11px;
+                margin-bottom: 8px;
+            }
+            .tabs-container {
+                gap: 4px;
+            }
+            .tab-button {
+                padding: 6px 12px;
+                font-size: 12px;
+                border-radius: 6px;
+            }
+            .preview-header {
+                font-size: 14px;
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+            }
+            .problem-text {
+                font-size: 13px;
+            }
+            .badge {
+                padding: 2px 8px;
+                font-size: 10px;
+            }
+            .option {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+            .options-title {
+                font-size: 12px;
+            }
+            #plot {
+                min-height: 250px;
+            }
+            .pinned-indicator {
+                font-size: 11px;
+                padding: 5px 10px;
+            }
+            .pinned-indicator svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
+        
+        /* Touch device optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .tab-button:hover {
+                background: #f1f5f9;
+                color: #64748b;
+            }
+            .tab-button.active:hover {
+                background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            }
+            .tab-button:active {
+                transform: scale(0.98);
+            }
         }
     
     </style>
